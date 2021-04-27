@@ -1,0 +1,9 @@
+{
+  "environment": "control",
+  "host": "localhost\\SQLEXPRESS",
+  "database": "Warehouse",
+  "schema": "",
+  "user": "sa",
+  "password": "",
+  "engine": "mssql"
+}

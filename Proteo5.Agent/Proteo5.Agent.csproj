@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>dotnet-Proteo5.Agent-C4549944-CCA1-4ABA-A666-0C6A6163E45F</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IdGen" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+    <PackageReference Include="RepoDb.SqlServer" Version="1.1.3" />
+    <PackageReference Include="RepoDb.SqlServer.BulkOperations" Version="1.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Processes\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\C-Gens\HL\Proteo5.HL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Environments\control.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="ETLs\DataMart.01.Test.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,30 @@
+{
+  "name": "Test Worker",
+  "description": "Test to transform data",
+  "id": "1",
+  "enable": true,
+  "run": {
+    "frequency": "every day",
+    "time": "07:00"
+  },
+  "jobs": [
+    {
+      "job_name": "Test Job Process",
+      "type": "run_process",
+      "process_name": "Test\\Proteo5.Agent.Worker.Test.exe",
+      "arguments": "",
+      "order": 1,
+      "on_error_halt": true,
+      "enable": true
+    },
+    {
+      "job_name": "Test Job Query ",
+      "type": "run_query",
+      "query": "Select * from ETLControl",
+      "environment": "control",
+      "order": 2,
+      "on_error_halt": true,
+      "enable": true
+    }
+  ]
+}
