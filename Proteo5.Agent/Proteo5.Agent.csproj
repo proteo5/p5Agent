@@ -8,16 +8,13 @@
   <ItemGroup>
     <PackageReference Include="IdGen" Version="3.0.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+    <PackageReference Include="Proteo5.HL" Version="0.4.0" />
     <PackageReference Include="RepoDb.SqlServer" Version="1.1.3" />
     <PackageReference Include="RepoDb.SqlServer.BulkOperations" Version="1.1.4" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Processes\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\C-Gens\HL\Proteo5.HL.csproj" />
   </ItemGroup>
 
   <ItemGroup>
